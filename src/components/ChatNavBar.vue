@@ -8,9 +8,9 @@
             <b-nav-text>
                 {{ user.name }}
             </b-nav-text>
-            <b-nav-item href"#" active>
+            <b-nav-item href="#" active>
                 Logout
-            <b-nav-item>
+            </b-nav-item>
         </b-navbar-nav>
     </b-navbar>
 </template>

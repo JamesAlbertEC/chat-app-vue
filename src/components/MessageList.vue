@@ -28,16 +28,16 @@
 </template>
 
 <script>
-    import { mapState } from 'vuex'
+import { mapState } from 'vuex';
 
-    export default {
-        name: 'message-list',
-        computed: {
-            ...mapState([
-                'messages',
-            ])
-        }
-    }
+export default {
+  name: 'message-list',
+  computed: {
+    ...mapState([
+      'messages',
+    ]),
+  },
+};
 </script>
 
 <style>

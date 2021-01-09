@@ -24,25 +24,25 @@
 </template>
 
 <script>
-    import { mapState, mapGetters } from 'vuex'
+import { mapState, mapGetters } from 'vuex';
 
-    export default {
-        name: 'message-form',
-        data() {
-            return {
-                message: ''
-            }
-        },
-        computed: {
-            ...mapState([
-                'user',
-                'sending',
-                'error',
-                'activeRoom',
-            ]),
-            ...mapGetters([
-                'hasError'
-            ])
-        }
-    }
+export default {
+  name: 'message-form',
+  data() {
+    return {
+      message: '',
+    };
+  },
+  computed: {
+    ...mapState([
+      'user',
+      'sending',
+      'error',
+      'activeRoom',
+    ]),
+    ...mapGetters([
+      'hasError',
+    ]),
+  },
+};
 </script>

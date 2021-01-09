@@ -16,7 +16,7 @@
                 </b-form-input>
             </b-form-group>
 
-            <b-button type="submit" variant="primary" class="ld-ext-right" v-blind:class="{ running: loading }"
+            <b-button type="submit" variant="primary" class="ld-ext-right" v-bind:class="{ running: loading }"
             :disabled="isValid">
                 Login
             <div class="ld ld-ring ld-spin"></div>

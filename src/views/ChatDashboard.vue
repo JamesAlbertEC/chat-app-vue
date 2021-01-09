@@ -1,7 +1,7 @@
 <template>
     <div class="chat-dashboard">
         <chatNavBar />
-        <b-container fluid class="ld-over" v-bind:class="{ running: loading }"
+        <b-container fluid class="ld-over" v-bind:class="{ running: loading }">
             <div class="ld ld-ring ld-spin"></div>
             <b-row>
                 <b-col cols="2">
@@ -16,9 +16,13 @@
                     </b-row>
                     <b-row>
                         <b-col>
-                            <MessageForm>
+                            <MessageForm />
                         </b-col>
                     </b-row>
+                </b-col>
+
+                <b-col cols="2">
+                    <UserList />
                 </b-col>
             </b-row>
         </b-container>    
@@ -43,9 +47,9 @@
             MessageForm    
         },
         computed: {
-            ...mapState({
+            ...mapState([
                 'loading'
-            })
-        }
+            ])
+        },
     }
 </script>

@@ -12,15 +12,15 @@
 </template>
 
 <script>
-    import { mapState } from 'vuex'
+import { mapState } from 'vuex';
 
-    export default {
-        name: 'RoomList',
-        computed: {
-            ...mapState([
-                'rooms',
-                'activeRoom'
-            ]),
-        }
-    }
+export default {
+  name: 'RoomList',
+  computed: {
+    ...mapState([
+      'rooms',
+      'activeRoom',
+    ]),
+  },
+};
 </script>

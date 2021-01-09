@@ -10,11 +10,11 @@
                 </b-badge>
             </b-list-group-item>
         </b-list-group>
-    <div>
+    </div>
 </template>
 
 <script>
-    import { mapState } from 'vuex'
+    import { mapState } from 'vuex';
 
     export default {
         name: 'user-list',

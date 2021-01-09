@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Router from 'vue-router';
+import { Router } from 'vue-router';
 import Login from './views/Login.vue';
 import ChatDashboard from './views/ChatDashboard.vue';
 
